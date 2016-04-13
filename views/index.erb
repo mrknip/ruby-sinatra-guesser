@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guess my number</title>
+	<style>
+
+		.guess {
+			color: <%= guess_colour %>;
+			font-weight: bold;
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<p>
+		<%= number %>
+	</p>
+
+	<p class="guess">
+		<%= message %>
+	</p>
+
+<p>Guesses left: <%= guesses %></p>
+
+	<form>
+		<input type="text" name="guess" />
+		<input type="submit" value="GUESS!" />
+	</form>
+
+</body>
+</html>
+
+
